@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>KIC 리조트</title>
+
+    <!-- CSS Import -->
+    <link type="text/css" href="./css/basic.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- 플러그인 -->
+  </head>
+
+  <body>
+    <!-- header -->
+    <!-- 로고 -->
+    <div class="header">
+      <div class="boxcen">
+        <h1 class="logobox">
+          <a href="index.html">
+            <img src="./image/admin_logo.png" />
+          </a>
+        </h1>
+
+        <!-- 톱 네비게이션 -->
+        <ul class="top_nav01">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">마이 페이지</a></li>
+          <li><a href="#">관리자</a></li>
+        </ul>
+      </div>
+
+      <!-- 메인 네비게이션 -->
+
+      <div class="m_navgrp">
+        <!-- 내비게이션 -->
+        <ul class="m_nav">
+          <li class="dmenu">
+            <a href="#" class="menuBtn">리조트 안내</a>
+            <ul class="depth_nav" id="depth_nav_1">
+              <li>
+                <a href="#1" class="menuBtn topmenu">리조트 소개</a>
+
+                <a href="#2" class="menuBtn topmenu">오시는 길</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dmenu">
+            <a href="#" class="menuBtn">객실안내</a>
+            <ul class="depth_nav" id="depth_nav_2">
+              <li>
+                <a href="#1" class="menuBtn topmenu">스위트룸</a>
+
+                <a href="#2" class="menuBtn topmenu">패밀리룸</a>
+
+                <a href="#3" class="menuBtn topmenu">디럭스트윈</a>
+
+                <a href="#4" class="menuBtn topmenu">스탠다드룸</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dmenu">
+            <a href="#" class="menuBtn">부대시설</a>
+            <ul class="depth_nav" id="depth_nav_3">
+              <li>
+                <a href="#1" class="menuBtn topmenu">레스토랑</a>
+
+                <a href="#2" class="menuBtn topmenu">바베큐장</a>
+
+                <a href="#3" class="menuBtn topmenu">편의점</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dmenu">
+            <a href="#" class="menuBtn">커뮤니티</a>
+            <ul class="depth_nav" id="depth_nav_4">
+              <li>
+                <a href="#1" class="menuBtn topmenu">공지사항/이벤트</a>
+
+                <a href="#2" class="menuBtn topmenu">문의하기</a>
+
+                <a href="#3" class="menuBtn topmenu">고객후기</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dmenu">
+            <a href="#" class="menuBtn">객실예약</a>
+            <ul class="depth_nav" id="depth_nav_5">
+              <li>
+                <a href="#1" class="menuBtn topmenu">온라인 예약</a>
+
+                <a href="#2" class="menuBtn topmenu">예약 확인/취소</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dmenu">
+            <!-- 관리자로 로그인 했을 경우에만 보이게 -->
+            <a href="#" class="menuBtn">관리자</a>
+            <ul class="depth_nav" id="depth_nav_6">
+              <li>
+                <a href="#1" class="menuBtn topmenu">방가격 수정</a>
+
+                <a href="#2" class="menuBtn topmenu">매출목록</a>
+
+                <a href="#2" class="menuBtn topmenu">회원목록</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div id="dropMenuBg"></div>
+      </div>
+
+      <!--//내비게이션 -->
+    </div>
+    <!--//header -->
+
+    <!-- 서브상단이미지 -->
+    <div class="sub_topgrp">
+      <div class="subtitbox">
+        <h1 id="mtitle">객실안내</h1>
+      </div>
+      <div class="s_topimg">
+        <img src="./image/room_top.png" />
+      </div>
+    </div>
+    <!-- //서브상단이미지 -->
+
+    <!-- Contents Start -->
+    <div id="contents_sub">
+      <div class="content_area">
+        <div class="subtitbox02">
+          <h1 id="ltitle">스위트룸</h1>
+        </div>
+
+        <!-- 슬라이드 Start -->
+        <!-- 슬라이드 사용 여부 / 환경설정에서 수정가능 -->
+        <div class="sub_slide_area">
+          <!-- 슬라이드 큰이미지 -->
+          <div class="sub_slide_big">
+            <!-- 슬라이드 큰 이미지 버튼 -->
+            <div class="slide_btn_area">
+              <a class="slide_big_btn_left"></a>
+              <a class="slide_big_btn_right"></a>
+            </div>
+            <img
+              src="./image/room1_big1.jpg"
+              alt="이미지슬라이드큰이미지"
+              id="sub_slider_big_pic"
+            />
+          </div>
+
+          <!-- 썸네일 그룹 -->
+          <div class="s_slider_grp">
+            <!-- 슬라이드 버튼 -->
+            <div>
+              <a class="slide_btn_left"></a>
+              <a class="slide_btn_right"></a>
+            </div>
+            <!-- 썸네일 -->
+            <ul class="sub_slide_small" style="overflow: hidden">
+              <li class="active" id="small_slide_1">
+                <img
+                  src="./image/room1_small1.jpg"
+                  alt="이미지슬라이드작은이미지"
+                />
+                <span class="hover_bg"></span>
+              </li>
+
+              <li id="small_slide_2">
+                <img
+                  src="./image/room1_small2.jpg"
+                  alt="이미지슬라이드작은이미지"
+                />
+                <span class="hover_bg"></span>
+              </li>
+
+              <li id="small_slide_3">
+                <img
+                  src="./image/room1_small3.jpg"
+                  alt="이미지슬라이드작은이미지"
+                />
+                <span class="hover_bg"></span>
+              </li>
+
+              <li id="small_slide_4">
+                <img
+                  src="./image/room1_small4.jpg"
+                  alt="이미지슬라이드작은이미지"
+                />
+                <span class="hover_bg"></span>
+              </li>
+
+              <li id="small_slide_5">
+                <img
+                  src="./image/room1_small5.jpg"
+                  alt="이미지슬라이드작은이미지"
+                />
+                <span class="hover_bg"></span>
+              </li>
+            </ul>
+          </div>
+          <!--//썸네일 그룹 -->
+        </div>
+        <!-- 슬라이드 End -->
+
+        <!-- 	<td> -->
+        <div class="info_text_grp">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <div class="info_cont_box">
+            <div class="info_cont_tbox">
+              <div class="info_cont_left">
+                <h2 class="info_cont_title">스위트룸</h2>
+                <p class="info_cont_txt">
+                  합리적인 가족 여행을 위한 스위트 객실
+                </p>
+              </div>
+            </div>
+            <p>&nbsp;&nbsp;</p>
+            <div class="info_ntb_box">
+              <table class="info_ntb">
+                <colgroup>
+                  <col width="15%" />
+                  <col width="35%" />
+                  <col width="15%" />
+                  <col width="35%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th class="info_ntb_th">체크인</th>
+                    <td class="info_ntb_td">15:00</td>
+                    <th class="info_ntb_th">체크아웃</th>
+                    <td class="info_ntb_td">11:00</td>
+                  </tr>
+                  <tr>
+                    <th class="info_ntb_th">
+                      <p><span style="font-size: medium">기준인원 /</span></p>
+                      <p><span style="font-size: medium">투숙정원</span></p>
+                    </th>
+                    <td class="info_ntb_td">4인 / 4인</td>
+                    <th class="info_ntb_th">최대인원</th>
+                    <td class="info_ntb_td">6인</td>
+                  </tr>
+                  <tr>
+                    <th class="info_ntb_th">타입</th>
+                    <td class="info_ntb_td">양실2 + 거실1 + 화장실2</td>
+                    <th class="info_ntb_th">사이즈</th>
+                    <td class="info_ntb_td">102㎡</td>
+                  </tr>
+                  <tr>
+                    <th class="info_ntb_th">전망</th>
+                    <td class="info_ntb_td">오션뷰</td>
+                    <th class="info_ntb_th">정상가</th>
+                    <td class="info_ntb_td">680,000원</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <h2 class="info_cont_main_tit">Amenities</h2>
+            <ul class="info_cont_ulbox">
+              <li class="info_cont_li info_cont_li01">
+                <div class="info_cont_timg">
+                  <img src="./image/Amenities1.png" alt="" />
+                </div>
+                <h2 class="info_cont_tit">전자제품</h2>
+                <div class="info_cont_txtbox">
+                  <p class="info_cont_txt">- TV</p>
+                  <p class="info_cont_txt">- 냉장고</p>
+                  <p class="info_cont_txt">- 전기포트</p>
+                  <p class="info_cont_txt">- 헤어드라이기</p>
+                  <p class="info_cont_txt">- 전자레인지</p>
+                </div>
+              </li>
+              <li class="info_cont_li info_cont_li01">
+                <div class="info_cont_timg">
+                  <img src="./image/Amenities2.png" alt="" />
+                </div>
+                <h2 class="info_cont_tit">가구</h2>
+                <div class="info_cont_txtbox">
+                  <p class="info_cont_txt">- 식탁 1개</p>
+                  <p class="info_cont_txt">- 의자 4개</p>
+                  <p class="info_cont_txt">- 테이블</p>
+                  <p class="info_cont_txt">- 화장대</p>
+                  <p class="info_cont_txt">- 소파</p>
+                </div>
+              </li>
+              <li class="info_cont_li info_cont_li01">
+                <div class="info_cont_timg">
+                  <img src="./image/Amenities3.png" alt="" />
+                </div>
+                <h2 class="info_cont_tit">시설</h2>
+                <div class="info_cont_txtbox">
+                  <p class="info_cont_txt">- 무료 와이파이</p>
+                  <p class="info_cont_txt">- 다리미</p>
+                  <p class="info_cont_txt">- 아기욕조</p>
+                </div>
+              </li>
+              <li class="info_cont_li info_cont_li01">
+                <div class="info_cont_timg">
+                  <img src="./image/Amenities4.png" alt="" />
+                </div>
+                <h2 class="info_cont_tit">욕실</h2>
+                <div class="info_cont_txtbox">
+                  <p class="info_cont_txt">- 샴푸</p>
+                  <p class="info_cont_txt">- 바디워시</p>
+                  <p class="info_cont_txt">- 타월</p>
+                  <p class="info_cont_txt">- 칫솔</p>
+                  <p class="info_cont_txt">- 치약</p>
+                  <p class="info_cont_txt">- 면봉</p>
+                  <p class="info_cont_txt">- 화장솜</p>
+                  <p class="info_cont_txt">- 헤어캡</p>
+                </div>
+              </li>
+            </ul>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <div class="con_box_guide">
+              <h3 class="con_tit">※ 안내사항</h3>
+              <div class="con_box_tbox">
+                <p class="con_box_txt">
+                  <span style="font-size: medium"
+                    >&middot; 이용요금은 VAT포함입니다.</span
+                  >
+                </p>
+                <p class="con_box_txt">
+                  <span style="font-size: medium"
+                    >&middot; 투숙 정원 외 인원 추가 시 중학생&nbsp;이상
+                    부터&nbsp;1박당 11,000원 별도 요금이 부과됩니다.</span
+                  >
+                </p>
+                <p class="con_box_txt">
+                  <span style="font-size: medium"
+                    >&middot; 침구 추가 요청 시 투숙기간 내 1회 22,000원 별도
+                    요금이 부과됩니다. (침구 교체 시 추가비용 발생)</span
+                  >
+                </p>
+                <p class="con_box_txt">
+                  <span style="font-size: medium"
+                    >&middot; 입실시간 15시, 퇴실시간 11시입니다.</span
+                  >
+                </p>
+                <p class="con_box_txt">
+                  <span style="font-size: medium"
+                    >&middot; 오후 10시 이후의 입실은 사전에 반드시 연락을
+                    주시기 바랍니다.</span
+                  >
+                </p>
+                <p class="con_box_txt">
+                  <span style="font-size: medium"
+                    >&middot; Late C/O ~ 오후 3시, 1박 기준 50% 요금 발생, 오후
+                    3시 이후 퇴실시에는 1일 추가 요금 적용</span
+                  >
+                </p>
+                <p class="con_box_txt">
+                  <span style="font-size: medium"
+                    >&middot; 반려동물과 동반입실은 불가합니다.(당일 취소와
+                    동일하게 적용 됨)</span
+                  >
+                </p>
+                <p class="con_box_txt">
+                  <span style="font-size: medium"
+                    >&middot;&nbsp;호텔 내 객실을 포함한 모든 공간은 금연이며,
+                    지정된 외부 공간에서만 흡연이 가능합니다.</span
+                  >
+                </p>
+                <p class="con_box_txt">
+                  <span style="font-size: medium"
+                    >&middot; 전 객실 조리가 불가합니다.</span
+                  >
+                </p>
+                <p class="con_box_txt">
+                  <span style="font-size: medium"
+                    >&middot; 객실의 모든 시설물은 이용중 훼손 시 이용객측에
+                    변상하게 됩니다.</span
+                  >
+                </p>
+                <p class="con_box_txt">
+                  <span style="font-size: medium"
+                    >&middot; 이용객 본인 부주의에 의한 안전사고는 이용객 본인이
+                    책임지게 됩니다.</span
+                  >
+                </p>
+                <p class="con_box_txt">
+                  <span style="font-size: medium"
+                    >&middot; 예약전화 : 064) 805-0115</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 탭 시작 -->
+
+        <!-- 탭 끝 -->
+      </div>
+      <!-- Content End -->
+    </div>
+    <!-- contents End -->
+
+    <!-- container End -->
+
+    <!-- Footer Start -->
+    <div id="footer">
+      <div class="copy" style="padding: 0px">
+        <button id="ft_btn_close" class="btn_top radius03">TOP</button>
+      </div>
+
+      <div class="pop_tabbox">
+        <ul class="sns_listbox"></ul>
+      </div>
+      <div class="copy" id="ft_copy">
+        <!-- foot_sns -->
+        <div class="bc_box">
+          <div
+            class="wrap"
+            style="display: flex; flex-direction: row; align-items: center"
+          >
+            <p>주식회사 KIC</p>
+            <p style="font-size: 10px; margin: 0 6px">|</p>
+            <p>서울 강남구 테헤란로1길 10 세경빌딩</p>
+            <p style="font-size: 10px; margin: 0 6px">|</p>
+            <p>대표이사 : KIC</p>
+            <p style="font-size: 10px; margin: 0 6px">|</p>
+            <p>사업자번호 : 02-538-3644</p>
+          </div>
+          <div
+            class="wrap2"
+            style="display: flex; flex-direction: row; align-items: center"
+          >
+            <p>예약실 : 02-538-3644</p>
+            <p style="font-size: 10px; margin: 0 6px">|</p>
+            <p>프론트 : 02-538-3644</p>
+            <p style="font-size: 10px; margin: 0 6px">|</p>
+            <p>이메일 : http://www.kiccampus.co.kr/</p>
+            <p style="font-size: 10px; margin: 0 6px">|</p>
+            <p>FAX : 02-538-3644</p>
+          </div>
+          ⓒ 2023 KIC. ALL RIGHTS RESERVED.
+        </div>
+        <!-- 카피라이트(내용) -->
+      </div>
+
+      <a href="#" class="resevr_icon">
+        <span class="reser_box_bg"></span>
+        <span class="rese_btn_grp">
+          <span class="calendar_icon"> </span>
+          <span class="resevr_txt">온라인 예약하기</span>
+        </span>
+      </a>
+    </div>
+    <!-- Footer End -->
+
+    <script src="./js/room1.js"></script>
+  </body>
+</html>
